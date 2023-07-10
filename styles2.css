@@ -1,0 +1,236 @@
+@font-face {
+  font-family: Bitter;
+  src: url("fonts/Bitter-VariableFont_wght.ttf");
+}
+
+:root {
+  --dark-color: #202937;
+  --light-text-color: #fff;
+
+  --light-color: #e06622;
+  --dark-text-color: #222;
+  --cta-color: #3c82f6;
+}
+
+/* typography downloaded */
+h1,
+h2 {
+  color: #333333;
+  font-family: "Bitter", serif;
+  font-size: 32px;
+  font-weight: normal;
+  line-height: 54px;
+  margin: 0 0 54px;
+}
+
+p,
+li {
+  color: #333333;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 0 0 28px;
+}
+
+a {
+  color: #c73036;
+  font-family: Georgia, serif;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #333333;
+  text-decoration: underline;
+}
+
+.author {
+  color: #8d8d8d;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 14px;
+  margin-bottom: 28px;
+}
+
+.author a {
+  color: #c73036;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* end of typography download */
+
+html {
+  padding: 0;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  margin: 16px 0 16px 0;
+}
+
+.section {
+  width: 90%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.separator {
+  height: 1em;
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--light-color),
+    var(--light-color) 1px,
+    #fff 1px,
+    #fff 8px
+  );
+  margin: 1.4em auto;
+}
+
+.dark-bcg {
+  background-color: var(--dark-color);
+  color: var(--light-text-color);
+}
+
+#header .section {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1em;
+}
+
+#logo {
+  font-family: "Kaushan Script";
+  margin: 10px 20px;
+  font-size: 1.5em;
+}
+
+#header ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.button {
+  background-color: var(--dark-color);
+  border: 0;
+  padding: 0.5em 0.5em;
+  border-radius: 0.4em;
+  font-size: 16px;
+  color: var(--light-text-color);
+}
+
+#security {
+  text-align: center;
+}
+
+#instrucion {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+#security {
+  padding-left: 6px;
+}
+
+li {
+  margin-bottom: 0.2em;
+}
+
+h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 32px;
+}
+
+ol {
+  font-size: 18px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+
+
+#basen {
+  font-weight: normal;
+  display: flex;
+  text-align: left;
+}
+
+#basen2 {
+  font-weight: normal;
+  margin: 0;
+}
+
+#uzytkowanie {
+  margin: 18px 0;
+}
+
+.centered-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section img {
+  -webkit-box-shadow: 0px 3px 13px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 13px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 3px 13px -4px rgba(0, 0, 0, 0.75);
+}
+
+.margined {
+  margin: 1em;
+}
+
+figcaption {
+  margin-top: 1em;
+}
+
+hr {
+  border: 0;
+  border-top: medium double #5a7abc;
+  height: 1px;
+}
+
+.styled-table{
+  border-collapse: collapse;
+  margin: 1em 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr{
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table th, .styled-table td{
+  padding: 12px 15px;
+}
+
+.styled-table tbody tr{
+  border-bottom: 1px solid #dddddd;
+  }
+
+  .styled-table tbody tr:nth-of-type(2n){
+    background-color: #f3f3f3;
+  }
+
+  .styled-table tbody tr:last-of-type{
+    border-bottom: 2px solid #009879;
+  }
+
+  table{
+    
+  }

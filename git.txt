@@ -1,0 +1,4 @@
+
+git remote add origin https://github.com/xbonzox123/pgcreu19bis.git
+git branch -M main
+git push -u origin maingit 
