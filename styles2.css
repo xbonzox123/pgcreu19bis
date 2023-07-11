@@ -231,6 +231,37 @@ hr {
     border-bottom: 2px solid #009879;
   }
 
-  table{
-    
-  }
+.float-right{
+  float: right;
+}
+
+.margin-around{
+  margin: 0.7em;
+}
+
+.float-left{
+  float: left;
+}
+
+#photo-pv{
+  margin-right: 2em;
+}
+
+ul li::marker{
+  content: "> ";
+}
+
+.flexbox{
+  display: flex;
+}
+
+#footer {
+  clear:both;
+}
+
+#footer {
+  background-color: var(--dark-color);
+  color: var(--light-text-color);
+  padding: 40px;
+  text-align: center;
+}
