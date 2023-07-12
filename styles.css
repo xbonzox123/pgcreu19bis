@@ -116,6 +116,16 @@ h2 {
   margin-left: 20px;
 }
 
+#header a{
+  color: var(--light-text-color);
+  text-decoration: none;
+}
+
+#header a:hover{
+  text-decoration: underline;
+}
+
+
 .col50 {
   width: 50%;
 }
@@ -251,6 +261,10 @@ div#address {
   margin: 1.4em auto;
 }
 
+
+
+
+
 #basen {
   font-weight: normal;
   display: flex;
@@ -345,3 +359,4 @@ ul li::marker{
 #footer {
   clear:both;
 }
+
