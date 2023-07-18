@@ -5,26 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Passeig de la creu 19BIS</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="popup.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
       rel="stylesheet"
     />
+    <script type="text/javascript">
+      function openPopup() {
+        document.getElementById("popup").style.display = "block";
+        document.getElementById("overlay").style.display = "block";
+      }
+
+      function closePopup() {
+      // Hide the popup and overlay
+      document.getElementById("popup").style.display = "none";
+      document.getElementById("overlay").style.display = "none";
+    }
+    </script>
   </head>
   <body>
     <div id="header" class="dark-bcg">
       <div class="section">
-        <div id="logo">PgCreu19bis</div>
+        <a href="./index.html"><div id="logo">PgCreu19bis</div></a>
         <div>
           <!-- strona główna- manual- atrakcje -->
           <ul>
-            <li><button class="button">strona główna</button></li>
+            <li><a class="button active">strona główna</a></li>
             <li><a class="button" href="./manual.html">manual</a></li>
-            <li><a class="button" href="./atracions.html" >atrakcje</a></li>
+            <li><a class="button" href="./atracions.html">atrakcje</a></li>
           </ul>
         </div>
       </div>
+    </div>
+
+    <div id="popup" class="popup">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <h3>Popup Title</h3>
+      <p>Popup content goes here.</p>
+    </div>
+    <div id="overlay" class="overlay">
+      
     </div>
 
     <div id="hero" class="dark-bcg">
@@ -37,7 +59,7 @@
               zobacz co dla Ciebie przygotowaliśmy.</small
             >
           </p>
-          <button>Zadzwoń i umów</button>
+          <button onClick="openPopup()">Zadzwoń i umów</button>
         </div>
         <div class="col50">
           <img id="mainImage" src="./images/view.jpeg" width="100%" alt="w" />

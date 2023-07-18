@@ -15,13 +15,13 @@
   <body>
     <div id="header" class="dark-bcg">
       <div class="section">
-        <div id="logo">PgCreu19bis</div>
+        <a href="./index.html"><div id="logo">PgCreu19bis</div></a>
         <div>
           <!-- strona główna- manual- atrakcje -->
           <ul>
             <li><a class="button" href="./index.html">strona główna</a></li>
-            <li><button class="button">manual</button></li>
-            <li><button class="button">atrakcje</button></li>
+            <li><a class="button active">manual</a></li>
+            <li><a class="button" href="./atracions.html">atrakcje</a></li>
           </ul>
         </div>
       </div>
@@ -37,7 +37,15 @@
               <li>
                 Bramkę otwiera się kluczem z okrągłą główką.
                 <div class="float-right centered-container margin-around">
-                  <img class="shadowed" src="stub.png" alt="" width="300px" />
+                  <div id="alarm-on" class="tooltip">
+                    <span class="tooltiptext">Tym włączamy alarm.</span>
+                  </div>
+                  <img
+                    class="shadowed"
+                    src="./images/centralka-alarmu.jpeg"
+                    alt=""
+                    width="300px"
+                  />
                   <figcaption>Centralka alarmu</figcaption>
                 </div>
               </li>
@@ -51,7 +59,9 @@
               </li>
               <li>
                 Aby załączyć alarm trzeba wcisnąć prawy dolny przycisk na
-                urządzeniu przy drzwiach wejściowych.
+                urządzeniu przy drzwiach wejściowych. Jeśli usłyszy się długi
+                dźwięk, należy kliknąć przycisk drugi raz. Rozpocznie się
+                pikanie - uzbraja się alarm.
               </li>
               <li>
                 <div>
@@ -86,6 +96,7 @@
     </div>
 
     <div class="separator"></div>
+
     <div>
       <div id="wifi">
         <div class="section">
@@ -200,7 +211,12 @@
             temporyzacje. Temporyzacje są dobrane odpowiednio do produkcji prądu
             panelami. Moemy udostępnić dostęp do chmury jeśli będzie potrzebny.
             <div class="float-right centered-container margin-around">
-              <img class="shadowed" src="stub.png" alt="" width="300px" />
+              <img
+                class="shadowed"
+                src="./images/kontroler-klimy.jpeg"
+                alt=""
+                width="300px"
+              />
               <figcaption>Inteligenty kontroler klimatyzacji</figcaption>
             </div>
           </li>
@@ -251,7 +267,12 @@
           <li>
             Bezpieczniki są za drzwiami przy schodach do góry domu.
             <div class="float-right centered-container margin-around">
-              <img class="shadowed" src="stub.png" alt="" width="300px" />
+              <img
+                class="shadowed"
+                src="./images/pv.png"
+                alt=""
+                width="300px"
+              />
               <figcaption>Instalacja paneli</figcaption>
             </div>
           </li>
@@ -269,13 +290,6 @@
             Optymalizacja prądowa jest o tyle ważna, że używając jej rachunek za
             prąd to kilkadziesiąt euro, a nie stosując jej w sezonie chłodniczym
             może to być kilkaset euro.
-            <div
-              id="photo-pv"
-              class="float-left centered-container margin-around"
-            >
-              <img class="shadowed" src="stub.png" alt="" width="300px" />
-              <figcaption>Instalacja paneli</figcaption>
-            </div>
           </li>
 
           <li>
@@ -369,6 +383,18 @@
       <div class="section">
         <h2>Ogród</h2>
         <ol>
+          <div
+            id="photo-pv"
+            class="float-left centered-container margin-around"
+          >
+            <img
+              class="shadowed"
+              src="./images/ogrod.jpeg"
+              alt=""
+              width="400px"
+            />
+            <figcaption>Rośliny wymagające podlewania</figcaption>
+          </div>
           <li>
             Ogrodu ogólnie nie nawadniamy automatycznie przez suszę w hiszpanii.
           </li>
@@ -382,15 +408,9 @@
             Na nowym tarasie obok kuchni jest trochę roślin. Prosimy o ich
             podlewanie codziennie podczas pobytu wężem ogrodowym znajdującym się
             obok bambusów.
-            <div
-              id="photo-pv"
-              class="float-left centered-container margin-around"
-            >
-              <img class="shadowed" src="stub.png" alt="" width="300px" />
-              <figcaption>Rośliny wymagające podlewania</figcaption>
-            </div>
           </li>
         </ol>
+        <br class="clear" />
       </div>
 
       <div class="separator"></div>
@@ -424,7 +444,12 @@
 
             <li>
               <div class="float-right centered-container margin-around">
-                <img class="shadowed" src="stub.png" alt="" width="300px" />
+                <img
+                  class="shadowed"
+                  src="./images/maszyneria-basenowa.jpeg"
+                  alt=""
+                  width="300px"
+                />
                 <figcaption>Maszyneria basenowa</figcaption>
               </div>
               Aby móc się kąpać nie trzeba nic robić z basenem (prawie nic :) ),
@@ -475,7 +500,12 @@
                 id="photo-pv"
                 class="float-right centered-container margin-around"
               >
-                <img class="shadowed" src="stub.png" alt="" width="300px" />
+                <img
+                  class="shadowed"
+                  src="./images/robot-basenowu.jpeg"
+                  alt=""
+                  width="300px"
+                />
                 <figcaption>Robot basenowy</figcaption>
               </div>
               <ul>
@@ -585,15 +615,30 @@
               mały kranik obok dużego kranu.
               <div class="flexbox">
                 <div id="photo-pv" class="centered-container margin-around">
-                  <img class="shadowed" src="stub.png" alt="" width="300px" />
+                  <img
+                    class="shadowed"
+                    src="./images/kran-kuchnia.jpeg"
+                    alt=""
+                    width="300px"
+                  />
                   <figcaption>Kranik w kuchni głównej</figcaption>
                 </div>
                 <div id="photo-pv" class="centered-container margin-around">
-                  <img class="shadowed" src="stub.png" alt="" width="300px" />
+                  <img
+                    class="shadowed"
+                    src="./images/kran-porchè.jpeg"
+                    alt=""
+                    width="300px"
+                  />
                   <figcaption>Kranik na porchè</figcaption>
                 </div>
                 <div id="photo-pv" class="centered-container margin-around">
-                  <img class="shadowed" src="stub.png" alt="" width="300px" />
+                  <img
+                    class="shadowed"
+                    src="./images/maszyna-osmoza.jpeg"
+                    alt=""
+                    width="300px"
+                  />
                   <figcaption>Maszyna osmozy</figcaption>
                 </div>
               </div>
@@ -648,21 +693,27 @@
 
       <div class="separator"></div>
 
-      <div>
+      <div id="grill">
         <div class="section">
           <h2>Grill</h2>
+          <div
+            id="photo-pv"
+            class="float-right centered-container margin-around"
+          >
+            <img
+              class="shadowed"
+              src="./images/grill.jpeg"
+              alt=""
+              width="300px"
+            />
+            <figcaption>Zawór od gazu</figcaption>
+          </div>
           <ol>
             <li>
               Do dyspozycji jest kilka opcji: grill gazowy Weber duży, piec na
               pizze, grill standardowy (my nie używamy) obok pieca na pizze
             </li>
-            <div
-              id="photo-pv"
-              class="float-right centered-container margin-around"
-            >
-              <img class="shadowed" src="stub.png" alt="" width="300px" />
-              <figcaption>Zawór od gazu</figcaption>
-            </div>
+
             <li>
               jeśli będziecie używać to zapewne opcję pierwszą (można ją
               wzbogacić o kilka opcji typu patelnia, garnek caserole, przystawka
@@ -740,6 +791,8 @@
       </div>
     </div>
 
+    <br>
+    <br>
     <div id="footer">
       <div class="section">copyrights Hubert web development 2023</div>
     </div>

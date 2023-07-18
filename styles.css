@@ -211,7 +211,6 @@ li {
   color: var(--light-text-color);
   padding: 40px;
   text-align: center;
-  margin-top: 1.5em;
 }
 
 #footer .section::first-letter {
@@ -357,7 +356,54 @@ ul li::marker{
   display: flex;
 }
 
-#footer {
+.clear{
   clear:both;
 }
 
+#alarm-on {
+  position: relative;
+
+  width: 8px;
+  height: 8px;
+
+  top: 220px;
+  left: 20px;
+
+  border: 2px solid red;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.absolute {
+  position: absolute;
+}
+
+
+.tooltip {
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: var(--light-color);
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  z-index: 1;
+  position: absolute;
+  /* bottom: 125%;
+  left: 50%; */
+  opacity: 0;
+  transition: opacity 0.5s;
+  margin-bottom: 6px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+a.active{
+  text-decoration: underline !important;
+}
