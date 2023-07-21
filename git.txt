@@ -22,6 +22,12 @@ kopiuje pliki na S3 (czyli deployuje)
 Zakładając że mamy stabilną wersję softu na branchu main:
 git checkout production
 git merge main
+git add .
 git commit -m "najnowsza wersja z funkcją..."
 git push
 
+
+* jeśli czasami git przejdzie w tryb dodawania komentarza to:
+1. wciskamy klawisz 'i' - tryb insert, do pisania
+2. po wpisaniu komentarza wciskamy ESC
+3. :wq - czyli komenda write + quit
