@@ -1,4 +1,25 @@
+1. Aby ciągle widzieć na jakim jesteś branchu komenda:
+source ~/.bash_profile
 
-git remote add origin https://github.com/xbonzox123/pgcreu19bis.git
-git branch -M main
-git push -u origin maingit 
+2. Aby zmienić branch:
+git checkout main/production
+
+3. Aby dociągnąć kod najnowszy na branchu:
+git pull
+
+4. Po dokonaniu zmian trzeba dodać pliki do stagingu:
+git status 
+git add .
+git commit -m "tutaj message do komita"
+
+5. Aby wypchnąć na serwer:
+git push
+
+6. Mamy skonfigurowany github actions, który on: push na produkcje
+kopiuje pliki na S3 (czyli deployuje)
+
+Zakładając że mamy stabilną wersję softu na branchu main:
+git checkout production
+git merge main
+git commit -m "najnowsza wersja z funkcją..."
+git push
