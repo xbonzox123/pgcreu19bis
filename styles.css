@@ -20,7 +20,7 @@ h2 {
   font-size: 32px;
   font-weight: normal;
   line-height: 54px;
-  margin: 0 0 54px;
+  margin: 1em 0;
 }
 
 p,
@@ -84,7 +84,6 @@ h1 {
 }
 
 h2 {
-  margin: 0;
   text-align: center;
   font-size: 32px;
 }
@@ -116,15 +115,14 @@ h2 {
   margin-left: 20px;
 }
 
-#header a{
+#header a {
   color: var(--light-text-color);
   text-decoration: none;
 }
 
-#header a:hover{
+#header a:hover {
   text-decoration: underline;
 }
-
 
 .col50 {
   width: 50%;
@@ -194,8 +192,6 @@ blockquote p {
   font-style: normal;
 }
 
-
-
 ol {
   font-size: 18px;
   margin-bottom: 0;
@@ -260,10 +256,6 @@ div#address {
   );
   margin: 1.4em auto;
 }
-
-
-
-
 
 #basen {
   font-weight: normal;
@@ -344,20 +336,20 @@ figcaption {
   float: left;
 }
 
-#photo-pv{
+#photo-pv {
   margin-right: 2em;
 }
 
-ul li::marker{
+ul li::marker {
   content: "> ";
 }
 
-.flexbox{
+.flexbox {
   display: flex;
 }
 
-.clear{
-  clear:both;
+.clear {
+  clear: both;
 }
 
 #alarm-on {
@@ -377,7 +369,6 @@ ul li::marker{
 .absolute {
   position: absolute;
 }
-
 
 .tooltip {
   display: inline-block;
@@ -404,6 +395,6 @@ ul li::marker{
   opacity: 1;
 }
 
-a.active{
+a.active {
   text-decoration: underline !important;
 }
