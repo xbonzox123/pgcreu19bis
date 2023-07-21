@@ -1,6 +1,7 @@
 1. Aby ciągle widzieć na jakim jesteś branchu komenda:
 source ~/.bash_profile
 
+
 2. Aby zmienić branch:
 git checkout main/production
 
@@ -23,3 +24,4 @@ git checkout production
 git merge main
 git commit -m "najnowsza wersja z funkcją..."
 git push
+
